@@ -34,6 +34,7 @@ public class WebFileReader {
             int lines = 0;
             int words = 0;
             int characters = 0;
+            int parts = 0;
 
             String line;
             while ((line = br.readLine()) != null) {
@@ -41,11 +42,14 @@ public class WebFileReader {
                 lines++;
                 words += countWords(line);
                 characters += line.length();
+                if (line.contains("PART I"))
+                    parts++;
             }
 
             System.out.println("Lines: " + lines);
             System.out.println("Words: " + words);
             System.out.println("Characters: " + characters);
+            System.out.println("Parts: " + parts);
 
         } catch (IOException e) {
             e.printStackTrace();

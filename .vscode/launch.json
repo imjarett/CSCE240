@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "WebFileReader",
+            "request": "launch",
+            "mainClass": "prog1extractor.src.WebFileReader",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "WebFileReader",
+            "request": "launch",
+            "mainClass": "prog1extractor.WebFileReader",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "WebFileReader",
+            "request": "launch",
+            "mainClass": "WebFileReader",
+            "projectName": "CSCE 240_79f2b282"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+Prog1 Description by Jarett Sofronski for CSCE 240
+
+For this assignment, I created a program called WebFileReader which 
+reads and writes 10k files from my 2 companies, Johnsons&Johnson and General Mills.
+To achieve this, i made a file reader which takes an input file of the 10k data, 
+counts the characters, words, and lines from the file, and prints an indented format
+of the data to an output file for the specific company. 

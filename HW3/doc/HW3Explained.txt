@@ -1,0 +1,4 @@
+This code takes the data from input.txt, reads it through a file reader
+ and based off of the shape that is read, will calculate the shape's area
+and perimeter based off of the given side length data from input.txt. 
+The program then takes this data and writes it to output.txt.

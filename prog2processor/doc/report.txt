@@ -1,0 +1,5 @@
+This program takes a user input and returns a section of a companies 10-K.
+In this case, the program takes two paramters, company and section.
+Using these after checking for error, the program will read the given section of a companies 10-K line by
+line until the next section begins, puts the read lines into a string, and the prints that string to the terminal.
+This program uses user input from the terminal on VSCode and outputs it back to the terminal.

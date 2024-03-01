@@ -250,12 +250,12 @@ public class processor {
             company = keyboard.nextLine().toLowerCase();
             if(company.equals("general mills")){
                 System.out.println("Company Given: General Mills");
-                fileName = "generalMills2023.txt";
+                fileName = "prog3ui\\data\\generalMills2023.txt";
                 check1 = true;
             }
             else if(company.equals("johnson & johnson")){
                 System.out.println("Company Given: Johnson & Johnson");
-                fileName = "j&j2023.txt";
+                fileName = "prog3ui\\data\\j&j2023.txt";
                 check1 = true;
             }
             else{

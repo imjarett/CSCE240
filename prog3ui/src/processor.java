@@ -109,7 +109,7 @@ public class processor {
                 String startStringMine = "Item 4.MINE SAFETY DISCLOSURES";
                 String endStringMine = "16";
                 String gmStart = "ITEM 4 - Mine Safety Disclosures";
-                String gmEnd = "PART II";
+                String gmEnd = "PART II)";
                 while ((line = br.readLine()) != null) {
                     //J&J CASE
                     if (line.equals(startStringMine)) {
@@ -130,7 +130,7 @@ public class processor {
                 }
             }
 
-            //EXECUTIVE OFFICERS COMMAND CASE
+            //DIRECTORS/EXECUTIVE OFFICERS COMMAND CASE
             if(section.equals("directors")){
                 String startStringExec = "EXECUTIVE OFFICERS OF THE REGISTRANT";
                 String endStringExec = "19";
@@ -160,8 +160,8 @@ public class processor {
             if(section.equals("summary")){
                 String startStringSum = "Item 1.BUSINESS";
                 String endStringSum = "19";
-                String gmStart = "PART I";
-                String gmEnd = "PART II";
+                String gmStart = "PART I)";
+                String gmEnd = "PART II)";
                 while ((line = br.readLine()) != null) {
                     //J&J CASE
                     if (line.equals(startStringSum)) {
@@ -184,10 +184,10 @@ public class processor {
 
             //OPERATIONS AND DISCLOSURES COMMAND CASE
             if(section.equals("operations and disclosures")){
-                String startStringOD = "PART II ";
-                String endStringOD = "PART III ";
-                String gmStart = "PART II";
-                String gmEnd = "PART III";
+                String startStringOD = "    PART II";
+                String endStringOD = "    PART III";
+                String gmStart = "PART II)";
+                String gmEnd = "PART III)";
                 while ((line = br.readLine()) != null) {
                     //J&J CASE
                     if (line.equals(startStringOD)) {
@@ -212,7 +212,7 @@ public class processor {
             if(section.equals("financial statements")){
                 String startStringFin = "PART IV ";
                 String endStringFin = "The Company hereby agrees to furnish a copy of any such instrument to the SEC upon request.";
-                String gmStart = "PART IV";
+                String gmStart = "PART IV)";
                 String gmEnd = "96";
                 while ((line = br.readLine()) != null) {
                     //J&J CASE
@@ -291,7 +291,7 @@ public class processor {
             Matcher execMatcher = executives.matcher(userQuery);
             boolean containsExec = execMatcher.matches();
 
-            Pattern directors = Pattern.compile(".*\\bdirector\\b.*");
+            Pattern directors = Pattern.compile(".*\\bdirectors\\b.*");
             Matcher directorsMatcher = directors.matcher(userQuery);
             boolean containsDirector = directorsMatcher.matches();
 

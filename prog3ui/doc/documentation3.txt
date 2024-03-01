@@ -1,0 +1,3 @@
+This program expands upon my earlier ui used in PA2 with regex.
+It covers the base known options, and gives extra options on data to extract.
+Only issue is that asking "who are the directors" doesn't work for some reason, but asking "who are the executives" does work and achieves the same result that directors should.

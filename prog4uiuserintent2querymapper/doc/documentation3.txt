@@ -1,0 +1,3 @@
+This program revamps my earlier regex used in PA3..
+Instead of heavily relying on regex, the query is processed into a word processer and its matching topic is selected based on who has the highest match percentage.
+the function then calls the file processor from the processor class to print the proper 4K section to the terminal.

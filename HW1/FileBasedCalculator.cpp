@@ -1,5 +1,5 @@
+#include <sstream>
 #include <iostream>
-#include <string>
 #include <fstream>
 #include <sstream>
 
@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 
-    ifstream inputFile("./HW1/input.txt");
+    ifstream inputFile("input.txt");
     string line;
     if (!inputFile.is_open()) {
         cout << "Error opening input file." << endl;
@@ -48,7 +48,7 @@ int main()
         cout << "Error: Invalid operation." << endl;
         return 1;
     }
-    ofstream outputFile("./HW1/output.txt");
+    ofstream outputFile("output.txt");
     outputFile << "This is the result below" << endl;
     outputFile << result << endl;
     outputFile.close();

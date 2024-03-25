@@ -1,3 +1,18 @@
 {
-    "C_Cpp.default.compilerPath": "c:\\Users\\DELL\\Desktop\\CSCE 240\\FileBasedCalculator.cpp"
+    "C_Cpp.default.compilerPath": "c:\\Users\\DELL\\Desktop\\CSCE 240\\FileBasedCalculator.cpp",
+    "files.associations": {
+        "sstream": "cpp",
+        "system_error": "cpp",
+        "iostream": "cpp",
+        "chrono": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "format": "cpp",
+        "initializer_list": "cpp",
+        "span": "cpp"
+    }
 }

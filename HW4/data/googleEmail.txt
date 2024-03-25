@@ -1,0 +1,111 @@
+Delivered-To: jsofo4787@gmail.com
+Received: by 2002:a05:6a10:8585:b0:537:fca:ac3 with SMTP id j5csp2573358pxm;
+        Mon, 4 Mar 2024 08:30:21 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGHdH/IUB/GL7cgEXOuAHpL8lMPBfU1PkJitUfq9BNZcRQy6y9aokD/4UZnv/eN0JXSnbtC
+X-Received: by 2002:a05:622a:1101:b0:42e:e0df:aec3 with SMTP id e1-20020a05622a110100b0042ee0dfaec3mr6945770qty.31.1709569821244;
+        Mon, 04 Mar 2024 08:30:21 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1709569821; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PXkS9w2+q5LriX+CltusCcqcenc9ilvxzvLW4VoeYkbKm2BzCflQkxeOH4Nz78aLKh
+         M70gsH02TrmBNonIDYtDWddWTobWNNnD9PElJntOWqmZyaNuHbj1dJfg9AdR9fWuY9dy
+         1LMJD4oZRpt3lLKo74FENItc2T+UYlwerv3jcPoE7+wNfKm8+npMLAYDueKJmNjdi15r
+         X362d2nzA2KVlN1/y6zAsz8zYhm4cW6vIWeaxlTS8a77mJnOBImLhiOa1N8figkwhNZ+
+         UWHNbNLgUHjk+8KD/i7GyeU+qd23VF6j2jOIkSglSRD832IV9KphMJCi+6JSbyZg/dLm
+         H09g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:feedback-id:list-unsubscribe:subject:message-id:mime-version
+         :from:date:dkim-signature:dkim-signature;
+        bh=ar7PsSpPp7idbUB4LENRpwcRwXgignPUxnlz7fWm2HI=;
+        fh=4SEwnrQhRmWgc3+J1cDDQkvQiyyUcN3OZys7Sx+pze4=;
+        b=xm50x/b77jXjBYT4egQvft1c3KMXq4siTIBuNIQwsAbLHboBV9BxEz5xz/tjVDgMgU
+         Kby0aFMC2GhOdDdyO4QFMkwp0YdTUBV18pjwlbhfK3BLYEv+al6CeE5av6mgNl0hmEKV
+         SBgLHjpPvUanWt0I5KoZ16Z5diXysIdBagySEoKwoRVXsebZwSQPj9LIZUGXMiKmJINL
+         KPMSTIuKu4aPzgm+/r4756mxc5YGlQ4uYu9Y7bx7HOvGnYHlfiVdglamGeCSGBStofdF
+         C4g4LeBmHvFPzI9xHqbjZOQHRmF7IEP3MWguRD5T2+kLvoakqWIdXq+rjWOcLj78L4ku
+         BMNQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@k.customink.com header.s=s1 header.b="M5RFsE/T";
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=r5Xh0pW2;
+       spf=pass (google.com: domain of bounces+8391719-a200-jsofo4787=gmail.com@send.k.customink.com designates 168.245.39.137 as permitted sender) smtp.mailfrom="bounces+8391719-a200-jsofo4787=gmail.com@send.k.customink.com";
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=customink.com
+Return-Path: <bounces+8391719-a200-jsofo4787=gmail.com@send.k.customink.com>
+Received: from o348.send.customink.com (o348.send.customink.com. [168.245.39.137])
+        by mx.google.com with ESMTPS id m3-20020a05622a118300b0042eda4afe91si5794808qtk.482.2024.03.04.08.30.21
+        for <jsofo4787@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 04 Mar 2024 08:30:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+8391719-a200-jsofo4787=gmail.com@send.k.customink.com designates 168.245.39.137 as permitted sender) client-ip=168.245.39.137;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@k.customink.com header.s=s1 header.b="M5RFsE/T";
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=r5Xh0pW2;
+       spf=pass (google.com: domain of bounces+8391719-a200-jsofo4787=gmail.com@send.k.customink.com designates 168.245.39.137 as permitted sender) smtp.mailfrom="bounces+8391719-a200-jsofo4787=gmail.com@send.k.customink.com";
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=customink.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=k.customink.com; h=content-type:from:mime-version:subject:list-unsubscribe:x-feedback-id: to:cc:content-type:from:subject:to; s=s1; bh=ar7PsSpPp7idbUB4LENRpwcRwXgignPUxnlz7fWm2HI=; b=M5RFsE/TwHTv65EXmCKsSJePPQlkclmJeY8xUsXBRu7pAlxyjE1bcH1f0zdlsqyBt2Bi oWu3AG33VIUIl7N01bcswhJikSydIt0Iv+1tlOR8fkCbY3ihAR/mEyZinymduB0dVPtccb z6mYkOfHbx+oeRcOwEOVssLF4e5sDyTVd8V+bzfutxl5lUVeRGiBgsHGmaWbmyOsOjFAL1 GL/fIkppmxANFWHjbYFcGOYOjgsvwPKDZSPAhRUHQWrtcpMnTFrKVNM/oOLCGt9kssvYSm raoODMLOdWT5QAzzfr7NumYHaOOkyO1HVd0Ej/PgfIFFHLax3FW2DDfGrLZHMiSg==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:mime-version:subject:list-unsubscribe:x-feedback-id: to:cc:content-type:from:subject:to; s=smtpapi; bh=ar7PsSpPp7idbUB4LENRpwcRwXgignPUxnlz7fWm2HI=; b=r5Xh0pW233VDFlIqOkXFsPJIuRBN7Aqw8mHcLF9YV7rvoSD0Zm3hyvIwlpehgaa5iBhn lZ8ug+KKW+yakNT0hiY7spU94gxSc/9nVqgN3RoRTlF0qKUHGuOwKG7XCAt74YBw3Lxsd9 YHlSocf4X5N4Qzop5HjKKm/JSzxs5ko8o=
+Received: by filterdrecv-697c458b48-h59b6 with SMTP id filterdrecv-697c458b48-h59b6-1-65E5F71C-33D
+        2024-03-04 16:30:20.970470892 +0000 UTC m=+382042.167719231
+Received: from ODM5MTcxOQ (unknown) by geopod-ismtpd-3 (SG) with HTTP id LT0VuektReKRUlpfpOwX1Q Mon, 04 Mar 2024 16:30:20.948 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=72156fc5baf3aa0595c21bf0da63e153947d0461496cb0f4c8f96a3fc820
+Date: Mon, 04 Mar 2024 16:30:20 +0000 (UTC)
+From: Custom Ink <service@customink.com>
+Mime-Version: 1.0
+Message-ID: <LT0VuektReKRUlpfpOwX1Q@geopod-ismtpd-3>
+Subject: Options for every budget and style
+X-Kmail-Message: 01HQV1JBNWKEQ7QA4G3G45M7FF
+List-Unsubscribe: <http://customink-llc.myklpages.com/p/unsubscribe_klaviyo_1?a=Q4AcEH&c=KRcs6B&k=b04aafb65530c55fef2ecaa6a159a52e&m=01HQV1JBNWKEQ7QA4G3G45M7FF&r=37seDKbc>
+X-Kmail-Ops: KRcs6B
+X-Kmail-Account: Q4AcEH
+Feedback-ID: Q4AcEH:25358983815:kl
+X-Feedback-ID: 8391719:SG
+X-SG-EID: U9SsHQFHrlZAkfPOi9QfD2MStbdM6FkQDjQOpA5UHkNuw4rYHmrHfWsIU5Q2zHrhZdkWaaRJeR0z2MlX5CeXCmYHhBX0aJp5C6fzTL5DKTVMLmE0isPu+/SWi734EO+kEMmciUGQj6pgFZ1I+wmyIev5xvvXyuj0dG7+TRnOkEvFzwuuAxlsefuiMpv0UDZWDJcaVc1vWLYzgh3+7XQnwue/0CAT8LwL5n3TMzvAVRW07lfkzl7XCmzJXSiiHW+2
+X-SG-ID: N2C25iY2uzGMFz6rgvQsb3WdckyvbC2eFaxvdDHn8D1nndBBW0fUClUlZF2fTQ6KhYziV10s1JgYkNnqGGqK45KpJSA0PeZQc8pUxq+JYjM2SrTsMJ2eGgqNPDts4+g/uUPW3gnmhbteKiP+DZmiW0VsRGYlXM70LBNLmg2Io1EQHOM9/jbVKdl/6+4RNw0ebgB1OLXnBjngrhCVyvxuBd5zo2vwxoyTd+rvVVCEp5hYbBoUgbUxyyr8QZ6YdenQrnvMpBFMxEbK5Ux1YqQTWQ==
+To: jsofo4787@gmail.com
+X-Entity-ID: TvMyfbbozzAPQSXs0BF8sw==
+
+--72156fc5baf3aa0595c21bf0da63e153947d0461496cb0f4c8f96a3fc820
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0
+
+CustomInk.com - Make moves in custom activewear.
+
+Give Their Work Wardrobe a Workout
+
+Get moving with your group in custom activewear. Our array of gear from bel=
+oved brands like Champion, Cutter & Buck, and Oakley has everything you nee=
+d to shop for employee uniforms, client gifts, and more.
+
+Shop Activewear
+(https://www.customink.com/products/activewear/all-activewear/467)
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+CONTACT US
+
+800-293-4232
+service@customink.com
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+To ensure you don't miss out on the latest styles, design inspiration, orde=
+ring tips, and more,
+please add service@customink.com to your email address book or contact list=
+.=20
+
+If you no longer wish to receive emails from us, you can unsubscribe at any=
+ time.
+
+(http://customink-llc.myklpages.com/p/unsubscribe_klaviyo_1?a=3DQ4AcEH&c=3D=
+KRcs6B&k=3Db04aafb65530c55fef2ecaa6a159a52e&m=3D01HQV1JBNWKEQ7QA4G3G45M7FF&=
+r=3D37seDKbc)=20
+
+CustomInk, LLC | 2910 District Avenue Fairfax, VA 22031
+--72156fc5baf3aa0595c21bf0da63e153947d0461496cb0f4c8f96a3fc820
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0

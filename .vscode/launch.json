@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "prog4uiuserintent2querymapper.src.test",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "processor",
+            "request": "launch",
+            "mainClass": "prog4uiuserintent2querymapper.src.processor",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "processor",
+            "request": "launch",
+            "mainClass": "prog3ui.src.processor",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "processor",
+            "request": "launch",
+            "mainClass": "prog2processor.src.processor",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
             "name": "WebFileReader",
             "request": "launch",
             "mainClass": "prog1extractor.src.WebFileReader",

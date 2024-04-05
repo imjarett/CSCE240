@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "processor",
+            "request": "launch",
+            "mainClass": "prog5sessionlogger.src.processor",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "processor",
+            "request": "launch",
+            "mainClass": "processor",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
             "name": "test",
             "request": "launch",
             "mainClass": "prog4uiuserintent2querymapper.src.test",

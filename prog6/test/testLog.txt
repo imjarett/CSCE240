@@ -1,0 +1,54 @@
+Welcome to the 10-K processor
+Which companies 10-K form would you like to view?
+ Options: 'General Mills', 'Johnson & Johnson'
+
+General Mills
+Company Given: General Mills
+What would you like to know about general mills?
+Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety 
+Disclosures
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'
+-showchat
+Which chat number would you like to see?
+1
+Welcome to the 10-K processor
+Which companies 10-K form would you like to view?
+ Options: 'General Mills', 'Johnson & Johnson'
+general mills
+Company Given: General Mills
+What would you like to know about general mills?
+Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety 
+Disclosures
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'-showchat-summary
+What would you like to know about general mills?
+Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety 
+Disclosures
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'
+I don't know this information
+What would you like to know about general mills?
+Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety 
+Disclosures
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'who are the directors
+The section below provides information regarding our executive officers as of June 28, 2023.Kofi A. Bruce, age 53, is Chief Financial Officer. Mr. Bruce joined General Mills in 2009 as Vice President, Treasurer after serving ina variety of senior management positions with Ecolab and Ford Motor Company. He served as Treasurer until 2010 when he wasnamed Vice President, Finance for Yoplait. Mr. Bruce reassumed his role as Vice President, Treasurer from 2012 until 2014 when hewas named Vice President, Finance for Convenience Stores & Foodservice. He was named Vice President, Controller in 2017, VicePresident, Financial Operations in September 2019, and to his present position in February 2020.Paul J. Gallagher,age55, is Chief Supply Chain Officer. Mr. Gallagher joined General Mills in April 2019 as Vice President, NorthAmerica Supply Chain from Diageo plc. He began his career at Diageo where 
+he spent 25 years serving in a variety of leadership rolesin manufacturing, procurement, planning, customer service, and engineering before becoming President, North America Supply from2013 to March 2019. He was named to his current position in July 2021.Jeffrey L. Harmening, age 56, is Chairman of the Board and Chief Executive Officer. Mr. Harmening joined General Mills in 1994and served in various marketing roles in the Betty Crocker, Yoplait, and Big G cereal divisions. He was named Vice President,
+7Marketing for CPW in 2003 and Vice President of the Big G cereal division in 2007. In 2011, he was promoted to Senior VicePresident for the Big G cereal division. 
+Mr. Harmening was appointed Senior Vice President, Chief Executive Officer of CPW 
+in2012. Mr. Harmening returned from CPW in 2014 and was named Executive Vice President, Chief Operating Officer, U.S. Retail. Hebecame President, Chief Operating Officer in 2016. He was named Chief Executive Officer in 2017 and Chairman of the Board in2018. Mr. Harmening is a director of The Toro Company.Dana M. McNabb,age 47,is Chief Strategy & Growth Officer. Ms. McNabb joined General Mills in 1999 and held a variety ofmarketing roles in Cereal, Snacks, Meals, and New Products before becoming Vice President, Marketing for CPW in 2011 and VicePresident, Marketing for the Circle of Champions Business Unit in 2015. She became President, U.S. Cereal 
+Operating Unit in 2016,Group President, Europe & Australia in January 2020, and was named to her present position in July 2021.Jaime Montemayor, age 59, is Chief Digital and Technology Officer. He spent 21 years at PepsiCo, Inc., serving in roles ofincreasing responsibility, including most recently as Senior Vice President and Chief Information Officer of PepsiCoâ??s AmericasFoods segment from 2013 to 2015, and Senior Vice President and Chief Information Officer, Digital Innovation, Data and Analytics,PepsiCo from 2015 to 2016. Mr. Montemayor served as Chief Technology Officer of 7-Eleven Inc. in 2017. He assumed his currentrole in February 2020 after founding and operating a digital technology consulting company from 2017 until January 2020.Jon J. Nudi, age 53, is Group President, North America Retail. Mr. Nudi joined General Mills in 1993 as a Sales Representative andheld a variety of roles in Consumer Foods Sales. In 2005, he moved into marketing roles in the Meals division and was elected VicePresident in 2007. Mr. Nudi was named Vice President; 
+President, Snacks, in 2010, Senior Vice President, President,Europe/Australasia in 2014, and Senior Vice President; President, U.S. Retail in 2016. He was named to 
+his present position in 2017.Shawn P. Oâ??Grady, age 59, is Group President, North America Foodservice. Mr. Oâ??Grady joined General Mills in 1990 and heldseveral marketing roles in the Snacks, Meals, and Big G cereal divisions. He was promoted to Vice President in 1998 and heldmarketing positions in the Betty Crocker and Pillsbury USA divisions. In 2004, he moved into Consumer Foods Sales, becoming VicePresident, President, U.S. Retail Sales in 2007, Senior Vice President, President, Consumer Foods Sales Division in 2010, Senior VicePresident, President, Sales & Channel Development in 2012, and Group President, Convenience Stores & Foodservice in 
+2017. Hewas named to his current position in December 2021.Mark A. Pallot,age 50, 
+is Vice President, Chief Accounting Officer. Mr. Pallot joined General Mills in 2007 and served asDirector,Financial Reporting until 2017, when he was named Vice President, Assistant Controller. He was elected to his present position inFebruary 2020. Prior to joining General Mills, Mr. Pallot held accounting and financial reporting positions at Residential Capital,LLC, Metris, Inc., CIT Group Inc., and Ernst & Young, LLP.Bethany Quam, age 52, is Group President, Pet. Ms. Quam joined General Mills in 1993 and held a variety of positions beforebecoming Vice President, Strategic Planning in 2007. She was promoted to Vice President, Field Sales, Channels in 2012, VicePresident; President, Convenience Stores & Foodservice in 2014, and Senior Vice President; President, Europe & Australia in 2016,and Group President; Europe & Australia in 2017. She was named to her current position in October 2019.Lanette Shaffer Werner, age 52, is Chief Innovation, Technical and Quality Officer. Ms. Shaffer Werner joined General Mills in 1995and held various R&D roles in Frozen Desserts and Pillsbury before serving as Director of One Global Dairy and Sr. Director for OneGlobal Cereal. In July 2021, Ms. Shaffer Werner was named as Vice President, Innovation, Technical and Quality, Meals & BakingSolutions. She was named to her present position in June 2023.Sean Walker,age 57, is Group President, 
+International. Mr. Walker joined General Mills in 1989 and held a variety of positionsbefore becoming Vice President, President of Latin America in 2009. He was named Senior Vice President, President Latin Americain 2012, Senior Vice President, Corporate Strategy in 2016, and Group President, Asia & Latin America in February 2019. He wasnamed to his current position in July 2021.Jacqueline Williams-Roll, age 54, is Chief Human Resources Officer. Ms. Williams-Roll joined General Mills in 
+1995. In thiscapacity, she also has responsibility for Corporate Communications. She held human resources leadership roles in Supply Chain,Finance, Marketing, and Organization Effectiveness, and has also worked a large part of her career on businesses outside of the UnitedStates. She was named Vice President, Human Resources, 
+International in 2010, and then promoted to Senior Vice President, HumanResources 
+Operations in 2013. She was named to her present position in 2014. Prior to joining General Mills, she held sales andmanagement roles with Jenny Craig International.Karen Wilson Thissen, age 56, is General Counsel and Secretary. Ms. Wilson Thissen joined General Mills in June 2022. Prior tojoining General Mills, she spent 17 years at Ameriprise Financial, Inc., serving in roles of increasing responsibility, including mostrecently as Executive Vice President and General Counsel from 2017 
+to June 2022, and Executive Vice President and Deputy GeneralCounsel from 2014 to 
+2017. Before joining Ameriprise Financial, Inc., she was a partner at the law firm of Faegre & Benson LLP(now Faegre Drinker Biddle & Reath LLP).
+ 8
+
+What would you like to know about general mills?
+Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety 
+Disclosures
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'q
+Quitting program, goodbye!

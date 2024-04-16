@@ -8,6 +8,13 @@
             "type": "java",
             "name": "processor",
             "request": "launch",
+            "mainClass": "prog6.src.processor",
+            "projectName": "CSCE 240_79f2b282"
+        },
+        {
+            "type": "java",
+            "name": "processor",
+            "request": "launch",
             "mainClass": "prog5sessionlogger.src.processor",
             "projectName": "CSCE 240_79f2b282"
         },

@@ -5,8 +5,11 @@ general mills
 Company Given: General Mills
 What would you like to know about general mills?
 Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety Disclosures
-Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'-summary
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'
+tell me about the ceo of general mills
+
 What would you like to know about general mills?
 Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety Disclosures
-Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'q
+Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'
+q
 Quitting program, goodbye!

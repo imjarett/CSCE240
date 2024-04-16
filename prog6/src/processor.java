@@ -1,4 +1,4 @@
-package prog5sessionlogger.src;
+package prog6.src;
 
 import java.util.regex.*;
 import java.util.Scanner;
@@ -27,7 +27,7 @@ public class processor {
         double statementsPercent = countWordsContained(userQuery, "tell me about "+company+ "'s statements","Financial Statements");
         double generalAboutPercent = countWordsContained(userQuery, "tell me about "+company,"General About");
         double businessPercent = countWordsContained(userQuery, "explain the business of "+company, "Business");
-        double ceoPercent = countWordsContained(userQuery, "who is "+company+"'s ceo", "CEO");
+        double ceoPercent = countWordsContained(userQuery, "tell me about the ceo of "+company, "CEO");
         double[] values = {riskPercent, propertiesPercent, legalPercent, minePercent, directorsPercent, execPercent, everythingPercent, operatePercent, disclosuresPercent, statementsPercent, generalAboutPercent, businessPercent, ceoPercent};
         double max = 0.0;
         System.out.println("Match Percentage: ");
@@ -145,7 +145,7 @@ public class processor {
         String formattedDateTime = currentTime.format(formatter);
         String outputFileName = formattedDateTime + ".txt";
         System.out.println(fileName);
-        File chatFile = new File("./prog5sessionlogger/data/chat_sessions/" + outputFileName);
+        File chatFile = new File("./prog6/data/chat_sessions/" + outputFileName);
         if (chatFile.createNewFile()) {
             System.out.println("File created: " + chatFile.getAbsolutePath());
         } else {
@@ -166,14 +166,14 @@ public class processor {
                 System.out.println("Company Given: General Mills");
                 chatLog += "Company Given: General Mills\n";
                 systemUtteranceCount++;
-                fileName = "prog5sessionlogger\\data\\generalMills2023.txt";
+                fileName = "prog6\\data\\generalMills2023.txt";
                 check1 = true;
             }
             else if(company.equals("johnson & johnson")){
                 System.out.println("Company Given: Johnson & Johnson");
                 chatLog += "Company Given: Johnson & Johnson\n";
                 systemUtteranceCount++;
-                fileName = "prog5sessionlogger\\data\\j&j2023.txt";
+                fileName = "prog6\\data\\j&j2023.txt";
                 check1 = true;
             }
             else{
@@ -186,7 +186,7 @@ public class processor {
         while(check2 == false){
             System.out.println("What would you like to know about "+company+"?");
             System.out.println("Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety Disclosures");
-            System.out.println("Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat'\n");
+            System.out.println("Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat' , '-companies-supported'\n");
             chatLog += "What would you like to know about "+company+"?\nPossible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety Disclosures\nCommands for CSV file: '-summary' , '-showchat-summary' , '-showchat'\n";
             String userQuery = keyboard.nextLine().toLowerCase();
             chatLog += userQuery + "\n";
@@ -202,12 +202,14 @@ public class processor {
                 break;
             }
             else if(userQuery.equals("-summary")){
+                //localLineCount set to -1 so the beginning csv line is skipped
                 int localLineCount = -1;
                 String localLine;
-                BufferedReader localReader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+                BufferedReader localReader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
                 while ((localLine = localReader.readLine()) != null) {
                     localLineCount++;
                 }
+                //check to make sure csv file is not empty
                 if(localLineCount == 0){
                     System.out.println("Error: CSV file has no data to summarize yet.");
                     chatLog += "Error: CSV file has no data to summarize yet.\n";
@@ -219,9 +221,10 @@ public class processor {
                     int userUttSum = 0;
                     int systemUttSum = 0;
                     double timeSum = 0.0;
-                    BufferedReader finalReader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+                    BufferedReader finalReader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
                     finalReader.readLine();
                     while ((finalLine = finalReader.readLine()) != null) {
+                        //lines split by comma, file name is only value skipped
                         parts = finalLine.split(",");
                         chatSum += Integer.parseInt(parts[0]);
                         userUttSum += Integer.parseInt(parts[2]);
@@ -241,7 +244,7 @@ public class processor {
                 userUtteranceCount++;
                 int localLineCount = -1;
                 String localLine;
-                BufferedReader localReader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+                BufferedReader localReader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
                 while ((localLine = localReader.readLine()) != null) {
                     localLineCount++;
                 }
@@ -263,10 +266,11 @@ public class processor {
                 else{
                     String finalLine;
                     String[] parts = {};
-                    BufferedReader finalReader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+                    BufferedReader finalReader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
                     while ((finalLine = finalReader.readLine()) != null) {
                         parts = finalLine.split(",");
                     }
+                    //system accesses each element of parts to output statistics of specific chat
                     System.out.println("Chat "+parts[0]+" has the user asking "+parts[2]+" times and the system responding "+parts[3]+"times. Total duration is "+parts[4]+" seconds");
                     chatLog += "Chat "+parts[0]+" has the user asking "+parts[2]+" times and the system responding "+parts[3]+"times. Total duration is "+parts[4]+" seconds\n";
                     systemUtteranceCount++;
@@ -280,7 +284,7 @@ public class processor {
                 userUtteranceCount++;
                 int localLineCount = -1;
                 String localLine;
-                BufferedReader localReader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+                BufferedReader localReader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
                 while ((localLine = localReader.readLine()) != null) {
                     localLineCount++;
                 }
@@ -302,10 +306,10 @@ public class processor {
                 else{
                     String finalLine;
                     String file = "";
-                    BufferedReader finalReader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+                    BufferedReader finalReader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
                     while ((finalLine = finalReader.readLine()) != null) {
                         String[] parts = finalLine.split(",");
-                        file = "./prog5sessionlogger/data/chat_sessions/"+parts[1];
+                        file = "./prog6/data/chat_sessions/"+parts[1];
                     }
                     BufferedReader reader = new BufferedReader(new FileReader(file));
                     String line;
@@ -316,32 +320,42 @@ public class processor {
                     systemUtteranceCount++;
                 }
             }
+            else if(userQuery.equals("-companies-supported")){
+                System.out.println("This program supports Q&A for General Mills and Johnson & Johnson");
+                systemUtteranceCount++;
+            }
             else{
                 calculateAndReadMatch(userQuery);
                 systemUtteranceCount++;
             }
         }
+        //time calculated in milliseconds and then converted to econds
         long endTime = System.currentTimeMillis();
         long elapsedMilliseconds = endTime - startTime;
         double elapsedSeconds = elapsedMilliseconds/1000.0;
+        //other chat statistics reported
         System.out.println("Elapsed Time in seconds: " + elapsedSeconds);
         System.out.println("User Utterance Count: " + userUtteranceCount);
         System.out.println("System Response Count: " + systemUtteranceCount);
         System.out.println("Current Date: " + currentTime);
         System.out.println(chatLog);
+        //bufferedwriter opened to write chatlog to new file
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(chatFile));
         bufferedWriter.write(chatLog);
         bufferedWriter.close();
         int lineCount = 0;
         String line;
         String prefix = "";
-        BufferedReader reader = new BufferedReader(new FileReader("./prog5sessionlogger/data/chat_statistics.csv"));
+        //buffered reader opened to read current csv file data
+        BufferedReader reader = new BufferedReader(new FileReader("./prog6/data/chat_statistics.csv"));
         while ((line = reader.readLine()) != null) {
             lineCount++;
             prefix += line+"\n";
         }
 		FileWriter fr = null;
-		fr = new FileWriter("./prog5sessionlogger/data/chat_statistics.csv", true);
+        //filewriter opened to write current chats data to csv
+		fr = new FileWriter("./prog6/data/chat_statistics.csv", true);
+        //data written and values are seperated by comma
         fr.write("\n"+lineCount+","+outputFileName+","+userUtteranceCount+","+systemUtteranceCount+","+elapsedSeconds);
         reader.close();
         fr.close();

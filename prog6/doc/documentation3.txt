@@ -1,3 +1,0 @@
-This program adds the use of commands to view stat summaries on previous chats.
-Commands are listed after company is input by user, and multiple checks are
-present to ensure the user cant use command when not applicable.

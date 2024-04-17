@@ -186,7 +186,7 @@ public class processor {
         while(check2 == false){
             System.out.println("What would you like to know about "+company+"?");
             System.out.println("Possible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety Disclosures");
-            System.out.println("Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat' , '-companies-supported'\n");
+            System.out.println("Commands for CSV file: '-summary' , '-showchat-summary' , '-showchat' , '-companies-supported', '-switch-companies', '-info-contained'\n");
             chatLog += "What would you like to know about "+company+"?\nPossible Options: Everything, Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, Mine Safety Disclosures\nCommands for CSV file: '-summary' , '-showchat-summary' , '-showchat'\n";
             String userQuery = keyboard.nextLine().toLowerCase();
             chatLog += userQuery + "\n";
@@ -201,7 +201,7 @@ public class processor {
                 check2 = true;
                 break;
             }
-            else if(userQuery.equals("-summary")){
+            else if(userQuery.equals("-summary")|| userQuery.equals("summary") || userQuery.contains("stats")){
                 //localLineCount set to -1 so the beginning csv line is skipped
                 int localLineCount = -1;
                 String localLine;
@@ -232,11 +232,11 @@ public class processor {
                         timeSum += Double.parseDouble(parts[4]);
                     }
                     System.out.println("There are "+chatSum+" chats to date with the user asking "+userUttSum+" times and the system responding "+systemUttSum+"times. Total duration is "+timeSum+" seconds");
-                    chatLog += "There are "+chatSum+" chats to date with the user asking "+userUttSum+" times and the system responding "+systemUttSum+"times. Total duration is "+timeSum+" seconds\n";
+                    chatLog += "There are "+chatSum+" chats to date with the user asking "+userUttSum+" times and the system responding "+systemUttSum+" times. Total duration is "+timeSum+" seconds\n";
                 }
                 systemUtteranceCount++;
             }
-            else if(userQuery.equals("-showchat-summary")){
+            else if(userQuery.equals("-showchat-summary")|| userQuery.equals("showchat-summary")|| userQuery.equals("showchat summary")){
                 System.out.println("Which chat number would you like a summary of?");
                 systemUtteranceCount++;
                 chatLog += "Which chat number would you like a summary of?\n";
@@ -271,12 +271,12 @@ public class processor {
                         parts = finalLine.split(",");
                     }
                     //system accesses each element of parts to output statistics of specific chat
-                    System.out.println("Chat "+parts[0]+" has the user asking "+parts[2]+" times and the system responding "+parts[3]+"times. Total duration is "+parts[4]+" seconds");
-                    chatLog += "Chat "+parts[0]+" has the user asking "+parts[2]+" times and the system responding "+parts[3]+"times. Total duration is "+parts[4]+" seconds\n";
+                    System.out.println("Chat "+parts[0]+" has the user asking "+parts[2]+" times and the system responding "+parts[3]+" times. Total duration is "+parts[4]+" seconds");
+                    chatLog += "Chat "+parts[0]+" has the user asking "+parts[2]+" times and the system responding "+parts[3]+" times. Total duration is "+parts[4]+" seconds\n";
                     systemUtteranceCount++;
                 }
             }
-            else if(userQuery.equals("-showchat")){
+            else if(userQuery.equals("-showchat") || userQuery.equals("showchat") || userQuery.equals("show chat")){
                 System.out.println("Which chat number would you like to see?");
                 chatLog += "Which chat number would you like to see?\n";
                 systemUtteranceCount++;
@@ -320,9 +320,29 @@ public class processor {
                     systemUtteranceCount++;
                 }
             }
-            else if(userQuery.equals("-companies-supported")){
+            else if(userQuery.equals("-companies-supported") || userQuery.equals("companies-supported") || userQuery.equals("companies supported")){
                 System.out.println("This program supports Q&A for General Mills and Johnson & Johnson");
                 systemUtteranceCount++;
+            }
+            else if(userQuery.equals("-switch-companies") || userQuery.equals("switch-companies") || userQuery.equals("switch companies")){
+                if(company.equals("general mills")){
+                    company = "johnson & johnson";
+                    System.out.println("Company Switched To: Johnson & Johnson");
+                    chatLog += "Company Switched To: Johnson & Johnson\n";
+                    systemUtteranceCount++;
+                    fileName = "prog6\\data\\j&j2023.txt";
+                }
+                else if(company.equals("johnson & johnson")){
+                    company = "general mills";
+                    System.out.println("Company Switched To: General Mills");
+                    chatLog += "Company Switched To: General Mills\n";
+                    systemUtteranceCount++;
+                    fileName = "prog6\\data\\generalMills2023.txt";
+                }
+            }
+            else if(userQuery.equals("-info-contained") || userQuery.equals("info-contained") || userQuery.equals("info contained") || userQuery.contains("info")){
+                    System.out.println("This program supports all parts of the 10-K's, as well as the items involving Risk Factors, Operations, Disclosures, Directors/Executive Officers, Financial Statements, Properties, Legal Proceedings, and Mine Safety Disclosures");
+                    systemUtteranceCount++;
             }
             else{
                 calculateAndReadMatch(userQuery);
@@ -338,7 +358,6 @@ public class processor {
         System.out.println("User Utterance Count: " + userUtteranceCount);
         System.out.println("System Response Count: " + systemUtteranceCount);
         System.out.println("Current Date: " + currentTime);
-        System.out.println(chatLog);
         //bufferedwriter opened to write chatlog to new file
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(chatFile));
         bufferedWriter.write(chatLog);

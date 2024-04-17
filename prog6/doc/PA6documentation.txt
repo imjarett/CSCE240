@@ -1,0 +1,13 @@
+CHANGES
+This program improves functionality by utilizing bits of code from Jacob Walton's code. The adjustments are documented as follows:
+- borrowed code format when checking for all commands to make sure a command can be recognized even if it doesnt begin with a dash or contain any dashes
+- implemented the ability to switch between companies which Jacob's code has
+
+TESTS
+
+#1 Graceful Exit: Works, will gracefully exit no matter if user types quit, Quit, q, Q,etc.
+#2 Debug: Works, tell me everything gives all company info
+#3 About Scope: Works, companies supported shown through -companies-supported command, Info contained displayed through -info-contained command or through any prompt containing info
+#4 About Each Supported Part and Item: Works for all
+#5 Chatbot Usage Statistics: Works, can be called through the -summary command or through any prompt containing a question about stats
+#6 Handling Others: Works, program will make best guess to a query above a 70% max match threshold, and if thats not met it handles it as chit chat and replies that it does not know 
